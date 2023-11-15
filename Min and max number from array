@@ -1,3 +1,12 @@
 function minMax(arr){
  return [Math.min.apply(Math, arr), Math.max.apply(Math, arr)];
 }
+
+
+function minMax(arr){
+ var min = arr[0], max = arr[0];
+  arr.forEach(function(val) {
+    min = Math.min(min, val);
+    max = Math.max(max, val);
+  });
+  return [min, max];}
