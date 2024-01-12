@@ -1,0 +1,14 @@
+function bouncer(arr) {
+   return arr.filter(Boolean);
+}
+bouncer([7, "ate", "", false, 9]);
+
+function removeFalsey(arr) {
+    // Applying the filter method on the array
+    return arr.filter((k) => {
+        // Checking if the value is truthy
+        if (k) {
+            return k;
+        }
+    });
+}
